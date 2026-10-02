@@ -4,7 +4,7 @@ A small, fully synthetic "airline operations analytics" repo used by [`LEARNING_
 
 **Everything here is fake.** Airports, flight numbers, delays, and audit findings are generated with a fixed random seed by `python/make_sample_data.py`.
 
-Maintainer: *your name* — started *date*
+Maintainer: *Nathan Lee* — started *2026-10-02*
 
 ## Layout
 
