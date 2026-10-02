@@ -1,0 +1,7 @@
+# Who gets auto-requested to review, by path. Last matching line wins.
+# Replace @your-github-username with your handle in Session 10. On a real team
+# these would be people or @org/team-name entries.
+*               @your-github-username
+/sql/           @your-github-username
+/python/        @your-github-username
+/.github/       @your-github-username

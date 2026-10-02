@@ -1,0 +1,8 @@
+# Practice repo: loose lower bounds are fine. A real project pins exact versions
+# (pip-compile, uv, or a conda lock) so CI and laptops install the same thing.
+pandas>=2.0
+duckdb>=1.0
+pytest>=8.0
+ruff>=0.5
+sqlfluff>=3.0
+nbstripout>=0.7

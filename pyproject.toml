@@ -1,0 +1,26 @@
+# Tool configuration for the practice repo. A real Python package would also put
+# its packaging metadata here; this repo is scripts + queries, so only tool
+# settings live in this file.
+
+[tool.ruff]
+line-length = 100
+src = [".", "python"]
+# Deliberately sloppy code for the Session 6 review exercise; lint it and CI is red.
+extend-exclude = ["exercises"]
+
+[tool.ruff.lint]
+# E = style errors, F = pyflakes (unused imports, undefined names),
+# I = import ordering, B = common bug patterns.
+select = ["E", "F", "I", "B"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["analytics_db", "data_quality_checks", "delay_report", "paths"]
+
+[tool.ruff.lint.per-file-ignores]
+# Databricks injects `spark`, `display`, and `dbutils` at runtime (F821), and
+# notebook cells import wherever they like (E402).
+"notebooks/*.py" = ["F821", "E402"]
+
+[tool.pytest.ini_options]
+pythonpath = ["python"]
+testpaths = ["tests"]

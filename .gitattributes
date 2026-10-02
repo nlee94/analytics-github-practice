@@ -1,0 +1,12 @@
+# Normalize line endings so Windows and Mac contributors don't produce diffs
+# where every line "changed". Git converts to LF in the repo and to the native
+# ending on checkout. Binary types are listed so Git never tries to diff them.
+* text=auto
+*.sql text
+*.py text
+*.md text
+*.csv text
+*.ipynb text eol=lf
+*.parquet binary
+*.xlsx binary
+*.pdf binary

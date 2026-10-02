@@ -1,0 +1,55 @@
+# .gitignore for a data-analytics repo. Every block explains itself; the point is
+# that Git never even sees data extracts, credentials, or generated outputs.
+
+# --- Secrets and local config: NEVER commit these -----------------------------
+.env
+.env.*
+*.pem
+*.key
+.databrickscfg
+secrets/
+
+# --- Data: raw/intermediate/output data stays out ------------------------------
+# `data/*` ignores everything directly under data/, then the `!` lines re-allow the
+# README and the tiny synthetic samples. This only works because the pattern is
+# `data/*` and not `data/` -- Git cannot re-include a file inside a directory that
+# is itself ignored.
+data/*
+!data/README.md
+!data/sample/
+*.parquet
+*.xlsx
+*.xls
+*.pkl
+*.db
+*.duckdb
+*.sqlite
+outputs/
+reports/
+
+# --- Python ----------------------------------------------------------------------
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# --- Notebooks -------------------------------------------------------------------
+.ipynb_checkpoints/
+# (cell outputs are stripped by nbstripout -- see LEARNING_PLAN.md, Session 8)
+
+# --- Databricks / dbt local artifacts -------------------------------------------
+.databricks/
+target/
+dbt_packages/
+logs/
+
+# --- Editors and OS --------------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

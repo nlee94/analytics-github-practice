@@ -1,0 +1,12 @@
+# Dependabot opens PRs when the GitHub Actions or Python packages this repo uses
+# have new versions. Reviewing and merging those PRs is a normal weekly chore.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "monthly"

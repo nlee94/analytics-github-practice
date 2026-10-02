@@ -1,0 +1,37 @@
+# Continuous integration: runs on every pull request and on pushes to main.
+# Each step mirrors a command you can run locally, so "works on my machine"
+# and "works in CI" mean the same thing.
+name: CI
+
+on:
+  pull_request:            # every PR, and every new commit pushed to it
+  push:
+    branches: [main]       # main itself, so its history shows green/red honestly
+
+jobs:
+  checks:
+    name: checks           # this name is what a branch ruleset requires (Session 10)
+    runs-on: ubuntu-latest # a fresh Linux VM per run
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip       # reuse downloaded packages between runs (keyed on requirements.txt)
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Lint Python (ruff)
+        run: ruff check .
+
+      - name: Lint SQL (sqlfluff)
+        run: sqlfluff lint sql/
+
+      - name: Run tests (pytest)
+        run: pytest -q
+
+      # Session 9, step 2: add a step here that runs python/data_quality_checks.py

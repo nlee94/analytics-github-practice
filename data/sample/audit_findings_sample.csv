@@ -1,0 +1,31 @@
+finding_id,audit_id,audit_date,area,severity,status,opened_date,closed_date,owner_team
+F-2026-001,AUD-2026-01,2026-04-06,Cabin Safety,Low,In Progress,2026-04-10,,Flight Standards
+F-2026-002,AUD-2026-01,2026-08-10,Cabin Safety,High,Open,2026-08-14,,Safety Programs
+F-2026-003,AUD-2026-01,2026-08-15,Training,High,Open,2026-08-18,,Safety Programs
+F-2026-004,AUD-2026-01,2026-06-23,Flight Ops,Low,Closed,2026-06-27,2026-08-14,Safety Programs
+F-2026-005,AUD-2026-01,2026-05-15,Security,Low,In Progress,2026-05-18,,Safety Programs
+F-2026-006,AUD-2026-01,2026-05-25,Cabin Safety,Medium,Open,2026-05-26,,Safety Programs
+F-2026-007,AUD-2026-02,2026-05-03,Security,Low,Closed,2026-05-08,2026-06-16,Safety Programs
+F-2026-008,AUD-2026-02,2026-06-23,Training,Medium,In Progress,2026-06-26,,Safety Programs
+F-2026-009,AUD-2026-02,2026-05-19,Security,Low,Open,2026-05-21,,Safety Programs
+F-2026-010,AUD-2026-02,2026-04-16,Maintenance,Low,Closed,2026-04-17,2026-05-30,Safety Programs
+F-2026-011,AUD-2026-02,2026-07-01,Security,Low,Open,2026-07-03,,Tech Ops
+F-2026-012,AUD-2026-02,2026-05-10,Training,High,In Progress,2026-05-14,,Flight Standards
+F-2026-013,AUD-2026-03,2026-05-27,Ground Ops,Low,Closed,2026-06-01,2026-08-14,Inflight
+F-2026-014,AUD-2026-03,2026-05-10,Ground Ops,Low,Closed,2026-05-13,2026-07-22,Station Ops
+F-2026-015,AUD-2026-03,2026-04-25,Flight Ops,Medium,In Progress,2026-04-28,,Tech Ops
+F-2026-016,AUD-2026-03,2026-08-07,Cabin Safety,Medium,Open,2026-08-09,,Tech Ops
+F-2026-017,AUD-2026-03,2026-05-14,Maintenance,Low,Closed,2026-05-16,2026-07-23,Safety Programs
+F-2026-018,AUD-2026-03,2026-07-18,Security,Low,In Progress,2026-07-22,,Flight Standards
+F-2026-019,AUD-2026-04,2026-09-09,Ground Ops,High,In Progress,2026-09-13,,Tech Ops
+F-2026-020,AUD-2026-04,2026-05-21,Security,Medium,In Progress,2026-05-22,,Tech Ops
+F-2026-021,AUD-2026-04,2026-04-30,Maintenance,High,Closed,2026-05-02,2026-07-01,Inflight
+F-2026-022,AUD-2026-04,2026-04-08,Flight Ops,Medium,In Progress,2026-04-13,,Inflight
+F-2026-023,AUD-2026-04,2026-04-03,Flight Ops,Low,In Progress,2026-04-07,,Tech Ops
+F-2026-024,AUD-2026-04,2026-04-28,Cabin Safety,Low,In Progress,2026-04-30,,Safety Programs
+F-2026-025,AUD-2026-05,2026-04-13,Security,Low,Closed,2026-04-18,2026-05-25,Inflight
+F-2026-026,AUD-2026-05,2026-06-28,Flight Ops,Low,Open,2026-07-03,,Station Ops
+F-2026-027,AUD-2026-05,2026-08-30,Cabin Safety,Medium,Open,2026-08-31,,Safety Programs
+F-2026-028,AUD-2026-05,2026-07-26,Maintenance,High,Open,2026-07-31,,Tech Ops
+F-2026-029,AUD-2026-05,2026-04-07,Training,High,Closed,2026-04-08,2026-05-04,Station Ops
+F-2026-030,AUD-2026-05,2026-04-12,Security,High,Open,2026-04-13,,Flight Standards
