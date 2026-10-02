@@ -20,8 +20,8 @@ By the end you will have created a GitHub repo, made 20-odd commits, opened and 
 
 ## Progress
 
-- [ ] Session 0 — Setup
-- [ ] Session 1 — Commits
+- [x] Session 0 — Setup
+- [x] Session 1 — Commits
 - [ ] Session 2 — Push to GitHub, README, .gitignore
 - [ ] Session 3 — Branches and your first pull request
 - [ ] Session 4 — Undo and recovery
