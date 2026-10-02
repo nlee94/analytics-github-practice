@@ -28,4 +28,4 @@ run against the warehouse; `.sqlfluff` says where to switch the dialect.
 
 ## Maintainers
 
-- (add your name here in Session 1)
+- Nathan Lee
