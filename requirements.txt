@@ -4,5 +4,5 @@ pandas>=2.0
 duckdb>=1.0
 pytest>=8.0
 ruff>=0.5
-sqlfluff>=3.0
+sqlfluff>=4.3.0
 nbstripout>=0.7
